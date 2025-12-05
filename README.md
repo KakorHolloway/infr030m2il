@@ -92,3 +92,62 @@ On peut :
 - Tester dans le conteneur des commandes :
    ``` oc exec -it <nomconteneur> -- /bin/bash``` ou ```oc exec -it <nomconteneur> -- /bin/sh ```
 
+## Exo 2 ) Création d'un service avant l'ingress
+
+- Supprimez les pods de votre namespace
+
+- Créez le pod suivant avec le label de votre choix:
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    <aremplir>
+spec:
+  containers:
+  - image: harbor.kakor.ovh/public/nginx
+    name: nginx
+    securityContext:
+      allowPrivilegeEscalation: true
+```
+
+- Créez le service suivant et modifiez le pour qu'il se connecte au pod:
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+spec:
+  selector:
+    <a remplir>
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+```
+
+Si tout marche bien, créez l'ingress suivant et testez si vous accédez au site :
+
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx
+spec:
+  rules:
+    - host: <nomdevotresite>.apps.openshift.kakor.ovh
+      http:
+        paths:
+        - path: ''
+          pathType: ImplementationSpecific
+          backend:
+            service:
+              name: nginx
+              port:
+                number: 80
+  tls:
+  - {}
+```
