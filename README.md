@@ -55,3 +55,30 @@ Via un fichier yaml ou une commande impérative ( oc run <monpod>... ), créez v
 Celui-ci doit utiliser l'image suivante: harbor.kakor.ovh/public/httpd:latest
 
 Afin de confirmer que le pod existe, utilisez la commande ```oc get pod```
+
+``` oc logs <nomduconteneur> ``` => permet d'identifier les logs du conteneur et ainsi trouver des réponses à des problèmes techniques. 
+
+### Pour corriger le crashloopbackoff en cas de problème de compte root
+
+Dans le fichier yaml :
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd
+spec:
+  containers:
+  - name: httpd
+    image: harbor.kakor.ovh/public/httpd:latest
+    securityContext:
+      allowPrivilegeEscalation: true
+    ports:
+    - containerPort: 80
+```
+
+Autre option : refaire l'image (ou utiliser une autre image) pour que celle-ci ne nécéssite pas l'utilisation de l'utilisateur root, par exemple on peut utiliser cette image :
+
+harbor.kakor.ovh/public/nginx-rootless:latest
+
+### Exo 1.1) Supprimez le pod existant pour mettre à jour avec la nouvelle image.  
