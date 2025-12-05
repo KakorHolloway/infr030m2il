@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd
+  namespace: correction
+spec:
+  containers:
+  - image: harbor.kakor.ovh/public/httpd
+    name: httpd
+    securityContext:
+      allowPrivilegeEscalation: true
