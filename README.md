@@ -3,7 +3,7 @@
 ## Connection au cluster Openshift
 Pour vous connecter au cluster Openshift mis à disposition :
 
-### Pour trouver les soucres rendez-vous dans la release suivante : https://github.com/okd-project/okd/releases/tag/4.19.0-okd-scos.19
+### Pour trouver les sources rendez-vous dans la release suivante : https://github.com/okd-project/okd/releases/tag/4.19.0-okd-scos.19
 
 ### Pour Windows x86
 
