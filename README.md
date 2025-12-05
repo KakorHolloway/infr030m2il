@@ -82,3 +82,13 @@ Autre option : refaire l'image (ou utiliser une autre image) pour que celle-ci n
 harbor.kakor.ovh/public/nginx-rootless:latest
 
 ### Exo 1.1) Supprimez le pod existant pour mettre à jour avec la nouvelle image.  
+
+
+### Comment vérifier que le conteneur fonctionne bien ? 
+
+On peut : 
+
+- Vérifier le status sur Kubernetes (Est-il en Running ?)
+- Tester dans le conteneur des commandes :
+   ``` oc exec -it <nomconteneur> -- /bin/bash``` ou ```oc exec -it <nomconteneur> -- /bin/sh ```
+
