@@ -47,3 +47,11 @@ Une fois authentifié (attention à ne pas recharger la page même si l'affichag
 Cliquez sur le lien Display Token et copiez dans votre terminal sur VScode la ligne de commande qui à été donné avec oc. 
 
 Pour vérifier que vous êtes authentifiés, lancez la commande ```oc get pod```
+
+## Exo 1) Création de votre premier pod
+
+Via un fichier yaml ou une commande impérative ( oc run <monpod>... ), créez votre premier pod httpd. 
+
+Celui-ci doit utiliser l'image suivante: harbor.kakor.ovh/public/httpd:latest
+
+Afin de confirmer que le pod existe, utilisez la commande ```oc get pod```
