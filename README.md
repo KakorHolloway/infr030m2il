@@ -30,7 +30,12 @@ https://github.com/okd-project/okd/releases/download/4.19.0-okd-scos.19/openshif
 
 https://github.com/okd-project/okd/releases/download/4.19.0-okd-scos.19/openshift-install-mac-4.19.0-okd-scos.19.tar.gz pour x86
 
-Mettez le fichier oc dans le path. 
+Mettez le fichier oc dans le path.
+
+Ou alors :
+```
+brew install openshift-cli
+```
 
 
 ## Connexion au cluster (pour tous)
