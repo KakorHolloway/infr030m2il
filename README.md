@@ -151,3 +151,15 @@ spec:
   tls:
   - {}
 ```
+
+## Exo 3) Limits et Requests
+
+A partir du deployment de l'exercice 3 : 
+
+- Tentez de déployer un pod sans mettre de limit ou request et supprimez-le
+- Mettez en place un LimitRange avec 0,25 cpu et 0,5 Gb de RAM 
+- Tentez à nouveau de déployer le pod
+- Mettez à jour le deployment pour mettre 100m CPU (0,1 vCPU) et 50 Gb de RAM => Voyez ce qu’il se passe, dans quel état sont les pods ? 
+- Supprimez le limitRange
+- Mettez des valeurs de limits semblable au LimitRange 
+
