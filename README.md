@@ -156,7 +156,7 @@ spec:
 
 A partir du deployment de l'exercice 3 : 
 
-- Tentez de déployer un pod sans mettre de limit ou request et supprimez-le
+- Tentez de déployer un pod sans mettre de limit ou request et supprimez-le (vérifiez les limits qui sont positionnées (en théorie vous ne devriez rien voir))
 - Mettez en place un LimitRange avec 0,25 cpu et 0,5 Gb de RAM 
 - Tentez à nouveau de déployer le pod
 - Mettez à jour le deployment pour mettre 100m CPU (0,1 vCPU) et 50 Gb de RAM => Voyez ce qu’il se passe, dans quel état sont les pods ? 
