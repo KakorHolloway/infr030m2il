@@ -170,3 +170,14 @@ Nettoyez les actions de l'exercice 3 (limitrange et deployment)
 - Créez un deployment avec 5 pods qui va faire en sorte que les pods soient tous dans des noeuds différents (https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity)
 - Vérifiez qu'un des pods ne se déploie pas 
 - Faites en sorte que si ils peuvent les pods seront dans des noeuds différents et sinon ils pourront quand même se déployer. 
+
+## Exo 5 Les configmaps
+
+- Créez une page web simple en html.
+- A partir de cette page créez une configmap (le fichier html dans la configmap devra avoir le nom index.html)
+- A partir du fichier deployment.yaml dans le dossier exo5, montez le fichier index.html récupéré de la configmap précédemment créée. 
+- Vérifiez depuis votre navigateur le bon fonctionnement de votre montage. 
+
+Pour vous aider voici la documentation des configmaps :
+
+https://kubernetes.io/docs/concepts/configuration/configmap/
