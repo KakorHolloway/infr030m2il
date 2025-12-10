@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spread-pods-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: spread-pods
+  template:
+    metadata:
+      labels:
+        app: spread-pods
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: app
+                      operator: In
+                      values:
+                        - spread-pods
+                topologyKey: "kubernetes.io/hostname"
+      containers:
+        - name: busybox
+          image: busybox
+          command: ["sh", "-c", "sleep 3600"]
+ 
