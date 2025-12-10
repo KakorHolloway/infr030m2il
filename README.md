@@ -163,3 +163,10 @@ A partir du deployment de l'exercice 3 :
 - Supprimez le limitRange
 - Mettez des valeurs de limits semblable au LimitRange 
 
+## Exo4
+
+Nettoyez les actions de l'exercice 3 (limitrange et deployment)
+
+- Créez un deployment avec 5 pods qui va faire en sorte que les pods soient tous dans des noeuds différents (https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity)
+- Vérifiez qu'un des pods ne se déploie pas 
+- Faites en sorte que si ils peuvent les pods seront dans des noeuds différents et sinon ils pourront quand même se déployer. 
