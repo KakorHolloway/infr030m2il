@@ -205,4 +205,15 @@ Afin de trouver le bon emplacement de stockage, regardez la documentation de Mar
 
 Créez une table et vérifier qu'après suppression du pod, la donnée est persistée. 
 
+## Exo 8 : Votre application sur le Cloud (Noté)
 
+Pour la prochaine fois, trouvez une application que vous voudriez héberger dans Kubernetes (de préférence avec plusieurs composants comme une app et une bdd).
+
+Le but va être de :
+
+- Créer une image docker de votre application 
+- Pousser cette image sur ma registry harbor.kakor.ovh 
+- Créer les éléments d'infrastructure permettant de déployer votre applicatif
+- Vérifier le bon fonctionnement et l'exposition 
+- Faire une analyse de vulnérabilité sur votre image. 
+- Tenter d'intégrer tout ça dans une pipeline CI/CD sur Github ou Gitlab. 
