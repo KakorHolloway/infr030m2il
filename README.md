@@ -181,3 +181,10 @@ Nettoyez les actions de l'exercice 3 (limitrange et deployment)
 Pour vous aider voici la documentation des configmaps :
 
 https://kubernetes.io/docs/concepts/configuration/configmap/
+
+
+## Exo 6 : Les secrets
+
+- Créez un conteneurs mysql à partir de l'image : harbor.kakor.ovh/public/mariadb:latest
+- Ce conteneur devra avoir une variable d'environnement lui permettant de définir le mot de passe root (cf mariadb sur Docker Hub)
+- Mettez ce mot de passe dans un secret
