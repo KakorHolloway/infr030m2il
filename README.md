@@ -192,3 +192,17 @@ https://kubernetes.io/docs/concepts/configuration/configmap/
 ```
 oc create secret generic mysql-db-pass --from-literal=password=B4teau123!
 ```
+
+## Exo 7 : Le PV NFS
+
+Pour chaque groupe je vous ai créé un volume nfs avec le chemin suivant : 
+
+192.168.1.56:/Volume1/public/nfs-share-openshift/project-gp-X
+
+Afin de stocker les informations de votre base de donnée, à partir de l'exercice 6, créez un PV et un PVC nfs qui sera lié au deployment mysql. 
+
+Afin de trouver le bon emplacement de stockage, regardez la documentation de MariaDB sur Docker Hub. 
+
+Créez une table et vérifier qu'après suppression du pod, la donnée est persisté. 
+
+
