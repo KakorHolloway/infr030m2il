@@ -188,3 +188,7 @@ https://kubernetes.io/docs/concepts/configuration/configmap/
 - Créez un conteneurs mysql à partir de l'image : harbor.kakor.ovh/public/mariadb:latest
 - Ce conteneur devra avoir une variable d'environnement lui permettant de définir le mot de passe root (cf mariadb sur Docker Hub)
 - Mettez ce mot de passe dans un secret
+
+```
+oc create secret generic mysql-db-pass --from-literal=password=B4teau123!
+```
