@@ -203,6 +203,6 @@ Afin de stocker les informations de votre base de donnée, à partir de l'exerci
 
 Afin de trouver le bon emplacement de stockage, regardez la documentation de MariaDB sur Docker Hub. 
 
-Créez une table et vérifier qu'après suppression du pod, la donnée est persisté. 
+Créez une table et vérifier qu'après suppression du pod, la donnée est persistée. 
 
 
