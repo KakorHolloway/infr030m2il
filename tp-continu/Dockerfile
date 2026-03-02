@@ -16,5 +16,5 @@ COPY app/ .
 
 USER pythonuser
 
-ENTRYPOINT flask run --host 0.0.0.0
+ENTRYPOINT flask run --host 0.0.0.0 --app main.py
 
