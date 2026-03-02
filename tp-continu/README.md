@@ -35,6 +35,7 @@ Connectez vous sur harbor.kakor.ovh avec docker :
 
 L'utilisateur c'est ipi 
 
+Mot de passe B4teau123!
 
 Changez le nom de votre image pour la pousser sur harbor comme suit:
 
@@ -42,3 +43,9 @@ Changez le nom de votre image pour la pousser sur harbor comme suit:
 ``` docker push harbor.kakor.ovh/ipi/votrenom:latest ```
 
 Vérifiez les vulnérabilités de votre image.
+
+## Exercice 3) 
+
+à travers l'aide de l'exercice 2 du cours original, déployez votre application sur internet à travers le cluster Kubernetes 
+
+Pour rappel l'utilisateur c'est ipi-gp-x et le mot de passe habituel. 
