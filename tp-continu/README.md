@@ -25,4 +25,20 @@ Testez en local une fois le build fait que votre conteneur fonctionne correcteme
 Attention votre fichier doit obligatoirement se nommer Dockerfile
 
 ````docker build -t monimage:latest .````
-````docker run -d monimage:latest ````
+````docker run -d -p 5000:5000 monimage:latest ````
+
+## Exercice 2) Mettez votre image sur harbor
+
+Connectez vous sur harbor.kakor.ovh avec docker :
+
+``` docker login harbor.kakor.ovh ```
+
+L'utilisateur c'est ipi 
+
+
+Changez le nom de votre image pour la pousser sur harbor comme suit:
+
+```docker tag monimage:latest harbor.kakor.ovh/ipi/votrenom:latest ````
+``` docker push harbor.kakor.ovh/ipi/votrenom:latest ```
+
+Vérifiez les vulnérabilités de votre image.
