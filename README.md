@@ -217,3 +217,7 @@ Le but va être de :
 - Vérifier le bon fonctionnement et l'exposition 
 - Faire une analyse de vulnérabilité sur votre image. 
 - Tenter d'intégrer tout ça dans une pipeline CI/CD sur Github ou Gitlab. 
+
+
+## Pour le TP continu, voir le README.md dans le dossier tp-continu
+
