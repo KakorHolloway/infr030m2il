@@ -1,5 +1,9 @@
 # Demonstration DevOps
 
+Lien aide : 
+
+https://devopssec.fr/article/creer-ses-propres-images-docker-dockerfile#begin-article-section
+
 ## Exercice 1) Mise en place de l'image docker pour votre applicatif
 
 Créez l'image docker permettant de lancer l'application python flask contenue dans le dossier app.
